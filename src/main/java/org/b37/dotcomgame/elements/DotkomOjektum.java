@@ -9,9 +9,9 @@ public class DotkomOjektum {
 
     private static final int OJEKTUM_SIZE = 3;
 
-    private List<Dot> coordinates;
+    private List<Point> coordinates;
 
-    public DotkomOjektum(List<Dot> coordinates) {
+    public DotkomOjektum(List<Point> coordinates) {
         this.coordinates = coordinates;
         log.info("Creating DotkomOjektum" + coordinates);
     }

@@ -1,16 +1,17 @@
 package org.b37.dotcomgame.elements;
 
-public class Dot {
+public class Point {
     private int x;
     private int y;
 
-    public Dot(int x, int y) {
+    public Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
     public int getX() {
         return x;
     }
+
     public int getY() {
         return y;
     }
@@ -18,9 +19,9 @@ public class Dot {
     @Override
     public final boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Dot dot)) return false;
+        if (!(o instanceof Point point)) return false;
 
-        return getX() == dot.getX() && getY() == dot.getY();
+        return getX() == point.getX() && getY() == point.getY();
     }
 
     @Override
